@@ -1,0 +1,631 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgba(11, 11, 11, 0.502);
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #ffff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #000000;
+    transition: 5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+section{
+    background: url(Assets/fondoinicio.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#principal{
+    background: url(Assets/Fondoquienes.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#principal0{
+    background: url(Assets/Fondoservicios.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#principal1{
+    background: url(Assets/Fondonuestroequipo.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#principal2{
+    background: url(Assets/Fondogaleria.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#principal3{
+  background: url(Assets/Fondocontacto.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: grey;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.Facebook {
+  background-image: url("Assets/Facebook.png") no-repeat;
+  position: absolute;
+  left: 95%;
+  top: 94%;
+  width: 1.5%;
+  height: 4%;
+  z-index: 2;
+}
+.Instagram {
+  background-image: url("Assets/Instagram.png") no-repeat;
+  position: absolute;
+  left: 90%;
+  top: 94%;
+  width: 1.5%;
+  height: 4%;
+  z-index: 2;
+  background-color: rgba(11, 11, 11, 0.502);
+}
+#barra_bottom {
+   background:#000;
+   position: absolute;
+   top: 92.5%;
+    width:100%;
+   float:center;
+   height:46px;
+   color:#fff;
+}
+#barra_bottom1 {
+   background:#000;
+   position: absolute;
+   top: 92.5%;
+    width:100%;
+   float:center;
+   height:46px;
+   color:rgb(0, 0, 0);
+}
+.videoinicio {
+
+    position: absolute;
+    top: 52.5%;
+     width:100%;
+    float:center;
+    height:16px;
+
+ }
+
+
+
+
+
+ .MISIÓN {
+    font-size: 35px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    left: 5%;
+    top: 150%;
+    z-index: 5;
+  }
+  .Misión_texto {
+    font-size: 15px;
+    font-family: "Helvetica";
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    position: absolute;
+    left: 5%;
+    top: 210%;
+    width: 40%;
+    height: 5px;
+    z-index: 5;
+  }
+  .Mision_Fondo {
+    background-color: rgba(11, 11, 11, 0.749);
+    position: absolute;
+    left: 35px;
+    top: 105px;
+    width: 600px;
+    height: 160px;
+    z-index: 4;
+  }
+  .VISIÓN{
+    font-size: 35px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    left: 54%;
+    top: 150%;
+    z-index: 5;
+  }
+  .Visión_texto{
+    font-size: 15px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: justify;
+    position: absolute;
+    left: 54%;
+    top: 210%;
+    width: 40%;
+    height: 5px;
+    z-index: 5;
+  }
+  .Visión_Fondo {
+    background-color: rgba(11, 11, 11, 0.749);
+    position: absolute;
+    left: 700px;
+    top: 105px;
+    width: 600px;
+    height: 160px;
+    z-index: 4;
+  }
+  .VALORES {
+    font-size: 35px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    left: 44%;
+    top: 370%;
+    z-index: 5;
+  }
+  .Calidad_T {
+    font-size: 35px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top: 440%;
+    width: 160px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Honestidad_T {
+    font-size: 35px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 28%;
+    top: 440%;
+    width: 160px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Confianza_T {
+    font-size: 35px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 440%;
+    width: 160px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Respeto_T {
+    font-size: 36px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 72%;
+    top: 440%;
+    width: 160px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Calidad {
+    font-size: 16px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top: 500%;
+    width: 270px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Honestidad {
+    font-size: 16px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 28%;
+    top: 500%;
+    width: 270px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Confianza {
+    font-size: 16px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 500%;
+    width: 270px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Respeto {
+    font-size: 16px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 72%;
+    top: 500%;
+    width: 270px;
+    height: 28px;
+    z-index: 5;
+  }
+  
+  .Valores_Fondo {
+    background-color: rgba(11, 11, 11, 0.749);
+    position: absolute;
+    left: 35px;
+    top: 285px;
+    width: 1265px;
+    height: 235px;
+    z-index: 4;
+  }
+
+
+
+  .Fotografia_T {
+    font-size: 35px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top: 125%;
+    width: 100px;
+    height: 28px;
+    z-index: 5;
+  
+  }
+  .Fotografia_Fondo {
+    background-color: rgba(11, 11, 11, 0.749);
+    position: absolute;
+    left: 4%;
+    top: 120%;
+    width: 90%;
+    height: 90px;
+    z-index: 4;
+  }
+  .Fotografia {
+    font-size: 30px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    word-spacing: 40px;
+    left: 15%;
+    top: 175%;
+    width: 800px;
+    height: 28px;
+    z-index: 5;
+  }
+
+
+  .Video_T {
+    font-size: 35px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top: 250%;
+    width: 100px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Video_Fondo {
+    background-color: rgba(11, 11, 11, 0.749);
+    position: absolute;
+    left: 4%;
+    top: 245%;
+    width: 90%;
+    height: 90px;
+    z-index: 4;
+  }
+  .Video {
+    font-size: 30px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    word-spacing: 40px;
+    left: 15%;
+    top: 300%;
+    width: 800px;
+    height: 28px;
+    z-index: 5;
+  }
+
+  .Redessociales_T {
+    font-size: 36px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    top: 375%;
+    width: 400px;
+    height: 28px;
+    z-index: 5;
+  }
+  .Redessociales_Fondo {
+    background-color: rgba(11, 11, 11, 0.749);
+    position: absolute;
+    left: 4%;
+    top: 370%;
+    width: 90%;
+    height: 90px;
+    z-index: 4;
+  }
+  .Redessociales {
+    font-size: 30px;
+    font-family: "Helvetica";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    word-spacing: normal;
+    left: 15%;
+    top: 425%;
+    width: 800px;
+    height: 28px;
+    z-index: 5;
+  }
+  .contacto {
+    position: absolute;
+    left: 85%;
+    top: 500%;
+    width: 100px;
+    height: 110px;
+  }
+
+
+
+  .contenedor{
+    width: 100%;
+    position: relative;
+    height: 400px;
+  }
+  .botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+  }
+  .atras{
+    left: 2%;
+    top: 40%;
+  }
+  .adelante{
+    right: 20%;
+    top: 40%;
+  }
+  .imagen{
+    left: 1000px;
+    top: 3000px;
+    width: 900px;
+    height: 450px;
+  }
+  #barra_bottom1 {
+    background:#000;
+    position: absolute;
+    top: 1600px;
+     width:100%;
+    float:center;
+    height:150px;
+    color:#fff;
+ }
+ .clientess {
+  position: absolute;
+  left: 1%;
+  top: 500%;
+  width: 950px;
+  height: 110px;
+ }
+
+ .servicioss {
+  position: absolute;
+  left: 73%;
+  top: 500%;
+  width: 130px;
+  height: 110px;
+ }
+
+
+
+
+ **
+
+ body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: white;
+}
+
+svg {
+	width: 100vw;
+	height: 700px;
+}
+.image {
+	transition: all 1s ease;
+	cursor: pointer;
+}
+.image:hover {
+	transition: all 1s ease;
+	filter: none;
+	z-index: 100;
+}
+
+.two:hover {
+	transform: scale(1.1) translateX(-60px);
+}
+.three:hover {
+	transform: scale(1.1) translate(-60px, -50px);
+}
+.four:hover {
+	transform: scale(1.1) translate(40px, -70px);
+}
+.six:hover {
+	transform: scale(1.1) translateX(30px);
+}
+.one:hover {
+	transform: scale(1.1) translateX(-20px);
+}
+.five:hover {
+	transform: scale(1.1) translate(-80px, -50px);
+}
+.seven:hover {
+	transform: scale(1.1) translate(-10px, 30px);
+}
+.eight:hover {
+	transform: scale(1.1) translate(10px, -70px);
+}
+
